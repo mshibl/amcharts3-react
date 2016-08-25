@@ -1,4 +1,6 @@
 (function () {
+  var React = require('react');
+
   function getType(x) {
     // TODO make this faster ?
     return {}.toString.call(x);
@@ -176,11 +178,7 @@
 
     render: function () {
       return React.DOM.div({
-        id: this.state.id,
-        style: {
-          width: "100%",
-          height: "100%"
-        }
+        id: this.state.id
       });
     }
   });
